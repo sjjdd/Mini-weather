@@ -3,11 +3,10 @@
     <!--显示当天的天气情况-->
     <view class="info">
         <!--城市名称-->
-        <view class="city">{{city}} ({{weatherData.date}})</view>
+        <view class="city">{{city}} ({{todaydate}})</view>
+        <view class="dingwei">{{weatherData.currentCity}} {{weatherData.date}}</view>
         <!--当天最低到最高温度-->
         <view class="temp">{{today.tmp_min}}~{{today.tmp_max}}℃</view>
-        <!--感冒描述-->
-        <view class="weather">{{weather.ganmao}}</view>
     </view>
     <!--显示今天的天气信息-->
     <view class="today">
@@ -19,7 +18,7 @@
 
         <view class="detail">月升时间：{{today.mr}}<!--月升是时间--> 月落时间:{{today.ms}}<!--月落时间--></view>
 
-        <view class="detail">PM2.5浓度：{{weatherData.pm25}}<!--PM2.5浓度--></view>
+       <!-- <view class="detail">PM2.5浓度：{{weatherData.pm25}}--><!--PM2.5浓度--><!--</view>-->
     </view>
 
     <!--最近三天天气情况-->

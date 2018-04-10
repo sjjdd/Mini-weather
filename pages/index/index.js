@@ -60,7 +60,7 @@ Page({
 
     onLoad: function (options) {
         this.setData({
-            today: util.formatTime(new Date()).split(' ')[0]
+            todaydate: util.formatTime(new Date()).split(' ')[0]
         });
 
         var that = this;
@@ -200,12 +200,12 @@ Page({
                     afterTomor: res.data.HeWeather6[0].daily_forecast[2],
                     inputCity: ' '//清空输入框内容
                 })
-                    var zhText = cityName;
+                   /* var zhText = cityName;
                     zhText = encodeURI(zhText);
                     document.write("<audio autoplay=\"autoplay\">");
                     document.write("<source src=\"http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text="+ zhText +"\" type=\"audio/mpeg\">");
                     document.write("<embed height=\"0\" width=\"0\" src=\"http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=2&text="+ zhText +"\">");
-                    document.write("</audio>");
+                    document.write("</audio>");*/
                 }
 
             }
